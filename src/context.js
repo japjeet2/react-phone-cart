@@ -35,8 +35,11 @@ class ProductProvider extends Component {
     return product;
   };
 
-  handleDetail = () => {
-    console.log("Hello from Detail");
+  handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState(() => {
+      return { detailProduct: product };
+    });
   };
 
   addToCart = id => {
