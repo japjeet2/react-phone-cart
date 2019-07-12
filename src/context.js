@@ -14,7 +14,7 @@ class ProductProvider extends Component {
     };
   }
   componentDidMount() {
-      this.setProducts();
+    this.setProducts();
   }
 
   setProducts = () => {
@@ -30,12 +30,17 @@ class ProductProvider extends Component {
     });
   };
 
+  getItem = id => {
+    const product = this.state.products.find(item => item.id === id);
+    return product;
+  };
+
   handleDetail = () => {
     console.log("Hello from Detail");
   };
 
-  addToCart = () => {
-    console.log("Hello from add to cart");
+  addToCart = id => {
+    console.log(`Hello from add to cart, id is ${id}`);
   };
 
   //   tester = () => {
