@@ -6,6 +6,7 @@ import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import Details from "./components/Details";
 import Default from "./components/Default";
+import Modal from "./components/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/cart" component={Cart} />
         <Route component={Default} />
       </Switch>
+      <Modal />
     </React.Fragment>
   );
 }

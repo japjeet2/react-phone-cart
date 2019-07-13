@@ -12,13 +12,13 @@ export default class Product extends Component {
         <div className="card">
           <ProductConsumer>
             {value => (
-                <div
-                  className="img-container p-3"
-                  onClick={() => {
-                    // console.log("You clicked me on the image container");
-                    value.handleDetail(id);
-                  }}
-                >
+              <div
+                className="img-container p-3"
+                onClick={() => {
+                  // console.log("You clicked me on the image container");
+                  value.handleDetail(id);
+                }}
+              >
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
@@ -28,10 +28,11 @@ export default class Product extends Component {
                   // onClick={console.log("added to cart")}
                   onClick={() => {
                     value.addToCart(id);
+                    value.openModal(id);
                   }}
                 >
                   {inCart ? (
-                    <p className="text-capatalize mb-0" dsabled>
+                    <p className="text-capatalize mb-0" disabled>
                       inCart
                     </p>
                   ) : (
