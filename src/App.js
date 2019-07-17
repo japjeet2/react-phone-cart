@@ -8,6 +8,13 @@ import Details from "./components/Details";
 import Default from "./components/Default";
 import Modal from "./components/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
+require('dotenv').config()
+
+
+
+console.log('printing env variables',process.env);
+console.log('dot env config',require('dotenv').config());
+
 
 function App() {
   return (

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "dotenv": "^8.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-paypal-express-checkout": "^1.0.5",
@@ -12,6 +13,7 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
+    "startEnv":"export REACT_APP_APP_ID=AfRZEC6UhqlMLv98yWAzJ2G_T-ZS91gLj8rsdFu86xiDrds6A5q1AnxCd5beTpnoIRM10Mf3oeM9umsx && react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
